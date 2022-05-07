@@ -1,0 +1,186 @@
+
+****SEGUE ABAIXO O HTML DA LANDING PAGE****
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/media.css" rel="stylesheet">
+    <title>JD Smart Cell</title>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1>Assistência</h1>
+            <h1>Técnica</h1>
+        </div>
+
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#" id="botao"><li>Já tem uma conta?</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Faça um Orçamento agora</span></h2>
+            <h2>na JD Smart Cell</h2>
+            <p>Você está procurando alguém para consertar seu celular de forma rápida, segura e sem sair de casa? <br>
+            <br>Então você está no lugar certo!!<br> <br>Preencha os campos abaixo que muito em breve entraremos em contato para te ajudar:
+            </p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="tel" placeholder="N° Telefone">
+                <input type="submit" value="Enviar >">
+            </form>
+        </aside>
+
+        <article>
+            <img src="./images/troca-de-telas.png" alt="celular">
+        </article>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+****SEGUE ABAIXO O CSS DA LANDING PAGE****
+
+
+
+
+
+
+
+
+body {
+    background-color: #1C1C1C;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1600px;
+    margin: auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 12px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    transition: 0.3s all;
+    color: orangered;
+}
+
+#botao {
+    border: 2px solid orangered;
+    padding: 10px;
+    border-radius: 19px;
+}
+
+#botao:hover {
+    background-color: orangered;
+    color: white;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 70px;
+    line-height: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span {
+    color: orangered;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+}
+
+img {
+    width: 570px;
+    margin-left: 150px;
+    margin-top: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 40px;
+}
+
+form [type="submit"] {
+    height: 45px;
+    width: 50%;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+    background-color: #d44d17;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+}
